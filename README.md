@@ -65,7 +65,8 @@ PCL    >= 1.8,   Follow [PCL Installation](http://www.pointclouds.org/downloads/
 Eigen  >= 3.3.4, Follow [Eigen Installation](http://eigen.tuxfamily.org/index.php?title=Main_Page).
 
 ### 1.3. **livox_ros_driver**
-Follow [livox_ros_driver Installation](https://github.com/Livox-SDK/livox_ros_driver).
+Follow [livox_ros_driver Installation](https://github.com/Tomato1107/livox_ros_driver/tree/dev).
+You need to compile the modified dev branch!!!
 
 *Remarks:*
 - Since the FAST-LIO must support Livox serials LiDAR firstly, so the **livox_ros_driver** must be installed and **sourced** before run any FAST-LIO luanch file.
@@ -92,15 +93,15 @@ Noted:
 A. Please make sure the IMU and LiDAR are **Synchronized**, that's important.
 B. The warning message "Failed to find match for field 'time'." means the timestamps of each LiDAR points are missed in the rosbag file. That is important for the forward propagation and backwark propagation.
 ### 3.1 For Avia
-Connect to your PC to Livox Avia LiDAR by following  [Livox-ros-driver installation](https://github.com/Livox-SDK/livox_ros_driver), then
+Connect to your PC to Livox Avia LiDAR by following  [Livox-ros-driver installation](https://github.com/Tomato1107/livox_ros_driver/tree/dev), then
 ```
     cd ~/$FAST_LIO_ROS_DIR$
     source devel/setup.bash
     roslaunch fast_lio mapping_avia.launch
-    roslaunch livox_ros_driver livox_lidar_msg.launch
+    roslaunch livox_ros_driver livox_lidar.launch
 ```
 - For livox serials, FAST-LIO support the data collected by the ``` livox_lidar.launch ``` 
-- If you want to change the frame rate, please modify the **publish_freq** parameter in the [livox_lidar.launch](https://github.com/Tomato1107/livox_ros_driver/tree/dev/livox_ros_driver/launch/livox_lidar_msg.launch) of [Livox-ros-driver](https://github.com/Tomato1107/livox_ros_driver/tree/dev) before make the livox_ros_driver pakage.
+- If you want to change the frame rate, please modify the **publish_freq** parameter in the [livox_lidar.launch](https://github.com/Tomato1107/livox_ros_driver/tree/dev/livox_ros_driver/launch/livox_lidar.launch) of [Livox-ros-driver](https://github.com/Tomato1107/livox_ros_driver/tree/dev) before make the livox_ros_driver pakage.
 
 ### 3.2 For Livox serials with external IMU
 
