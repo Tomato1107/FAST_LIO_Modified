@@ -100,7 +100,7 @@ Connect to your PC to Livox Avia LiDAR by following  [Livox-ros-driver installat
     roslaunch livox_ros_driver livox_lidar.launch
 ```
 - For livox serials, FAST-LIO support the data collected by the ``` livox_lidar.launch ``` 
-- If you want to change the frame rate, please modify the **publish_freq** parameter in the [livox_lidar.launch](https://github.com/Tomato1107/livox_ros_driver_changed/livox_ros_driver/launch/livox_lidar.launch) of [Livox-ros-driver](https://github.com/Tomato1107/livox_ros_driver_changed) before make the livox_ros_driver pakage.
+- If you want to change the frame rate, please modify the **publish_freq** parameter in the [livox_lidar.launch](https://github.com/Tomato1107/livox_ros_driver_changed/tree/main/livox_ros_driver/launch) of [Livox-ros-driver](https://github.com/Tomato1107/livox_ros_driver_changed) before make the livox_ros_driver pakage.
 
 ### 3.2 For Livox serials with external IMU
 
