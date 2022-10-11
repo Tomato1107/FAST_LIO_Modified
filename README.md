@@ -77,10 +77,8 @@ Clone the repository and catkin_make:
 
 ```
     cd ~/$A_ROS_DIR$/src
-    git clone https://github.com/hku-mars/FAST_LIO.git
-    cd FAST_LIO
-    git submodule update --init
-    cd ../..
+    git clone https://github.com/Tomato1107/FAST_LIO_Modified.git
+    cd ..
     catkin_make
     source devel/setup.bash
 ```
